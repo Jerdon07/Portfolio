@@ -369,7 +369,7 @@ const getSkillColor = (level: number) => {
                         <div>
                             <h3 class="mb-2 text-xl font-semibold">{{ personalInfo.name }}</h3>
                             <p class="text-muted-foreground">
-                                I'm a {{ personalInfo.status }} specializing in full-stack web development with a focus on Laravel and Vue.js. 
+                                I'm a {{ personalInfo.status }} specializing in full-stack web development with a focus on Laravel and React.js. 
                                 Based in {{ personalInfo.location }}, I'm passionate about building scalable web applications that solve real-world problems.
                             </p>
                         </div>
@@ -377,7 +377,7 @@ const getSkillColor = (level: number) => {
                         <div>
                             <h4 class="mb-2 font-semibold">Education</h4>
                             <p class="text-muted-foreground">
-                                Bachelor of Science in Information Technology at the University of the Cordilleras<br>
+                                Udergraduate of Bachelor of Science in Information Technology at the University of the Cordilleras<br>
                                 Expected Graduation: {{ personalInfo.graduation }}
                             </p>
                         </div>
@@ -385,7 +385,7 @@ const getSkillColor = (level: number) => {
                         <div>
                             <h4 class="mb-2 font-semibold">What I'm Looking For</h4>
                             <p class="text-muted-foreground">
-                                I'm actively seeking opportunities to work on challenging projects where I can apply my Laravel and Vue.js expertise. 
+                                I'm actively seeking opportunities to work on challenging projects where I can apply my Laravel and React.js expertise. 
                                 I'm particularly interested in backend development roles but comfortable working across the full stack. 
                                 {{ personalInfo.availability }}.
                             </p>
