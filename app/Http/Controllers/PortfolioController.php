@@ -28,6 +28,8 @@ class PortfolioController extends Controller
                 ['name' => 'Inertia.js', 'level' => 4, 'category' => 'frontend'],
                 ['name' => 'TailwindCSS', 'level' => 4, 'category' => 'frontend'],
                 ['name' => 'SQLite', 'level' => 4, 'category' => 'backend'],
+                ['name' => 'MySQL', 'level' => 1, 'category' => 'backend'],
+                ['name' => 'PostgreSQL', 'level' => 1, 'category' => 'backend'],
                 ['name' => 'TypeScript', 'level' => 2, 'category' => 'frontend'],
                 ['name' => 'Git', 'level' => 3, 'category' => 'tools'],
             ],
