@@ -12,6 +12,7 @@ class PortfolioController extends Controller
         return Inertia::render('Portfolio', [
             'personalInfo' => [
                 'name' => 'Jerdon M. Litaoen',
+                'image' => asset('profile.jpg'),
                 'title' => 'Full-Stack Developer',
                 'subtitle' => 'Specializing in Laravel & React, Vue, and Livewire',
                 'location' => 'Baguio, Benguet, Philippines',
@@ -21,9 +22,11 @@ class PortfolioController extends Controller
             ],
             'techStack' => [
                 ['name' => 'Laravel', 'level' => 3, 'category' => 'backend'],
-                ['name' => 'Vue.js', 'level' => 3, 'category' => 'frontend'],
+                ['name' => 'React.js', 'level' => 3, 'category' => 'frontend'],
+                ['name' => 'Vue.js', 'level' => 1, 'category' => 'frontend'],
+                ['name' => 'Livewire PHP', 'level' => 1, 'category' => 'frontend'],
                 ['name' => 'Inertia.js', 'level' => 4, 'category' => 'frontend'],
-                ['name' => 'TailwindCSS', 'level' => 5, 'category' => 'frontend'],
+                ['name' => 'TailwindCSS', 'level' => 4, 'category' => 'frontend'],
                 ['name' => 'SQLite', 'level' => 4, 'category' => 'backend'],
                 ['name' => 'TypeScript', 'level' => 2, 'category' => 'frontend'],
                 ['name' => 'Git', 'level' => 3, 'category' => 'tools'],
@@ -41,22 +44,22 @@ class PortfolioController extends Controller
                         'Responsive design optimized for mobile and desktop',
                         'Database optimization for scalability',
                     ],
-                    'tech' => ['Laravel 12', 'Vue 3', 'Inertia.js', 'TailwindCSS', 'MySQL'],
+                    'tech' => ['Laravel 12', 'React JS', 'Inertia.js', 'TailwindCSS', 'SQLite'],
                     'github' => 'https://github.com/Cresco-Team/Hrvst',
                     'live_url' => null,
                     'status' => 'In Development',
                     'year' => '2024-2025',
-                    'image' => '/images/projects/hrvst.png', // You'll add screenshot later
+                    'image' => asset('hrvst-ss.png'),
                 ],
             ],
             'socials' => [
-                ['platform' => 'GitHub', 'url' => 'https://github.com/Jerdon07', 'icon' => 'github'], // Replace with your actual URLs
+                ['platform' => 'GitHub', 'url' => 'https://github.com/Jerdon07', 'icon' => 'github'],
                 ['platform' => 'LinkedIn', 'url' => 'https://www.linkedin.com/in/jerdon-litaoen-95057a3a4', 'icon' => 'linkedin'],
                 ['platform' => 'Facebook', 'url' => 'https://www.facebook.com/jer.don.35/', 'icon' => 'facebook'],
                 ['platform' => 'Discord', 'url' => 'https://discordapp.com/users/1218207427468726433', 'icon' => 'discord'],
             ],
             'contact' => [
-                'email' => 'your.email@example.com', // Replace with your actual email
+                'email' => 'jdlitaoen@gmail.com',
             ],
         ]);
     }
