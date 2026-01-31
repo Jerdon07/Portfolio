@@ -50,10 +50,10 @@ class PortfolioController extends Controller
                 ],
             ],
             'socials' => [
-                ['platform' => 'GitHub', 'url' => '#', 'icon' => 'github'], // Replace with your actual URLs
-                ['platform' => 'LinkedIn', 'url' => '#', 'icon' => 'linkedin'],
-                ['platform' => 'Facebook', 'url' => '#', 'icon' => 'facebook'],
-                ['platform' => 'Discord', 'url' => '#', 'icon' => 'discord'],
+                ['platform' => 'GitHub', 'url' => 'https://github.com/Jerdon07', 'icon' => 'github'], // Replace with your actual URLs
+                ['platform' => 'LinkedIn', 'url' => 'https://www.linkedin.com/in/jerdon-litaoen-95057a3a4', 'icon' => 'linkedin'],
+                ['platform' => 'Facebook', 'url' => 'https://www.facebook.com/jer.don.35/', 'icon' => 'facebook'],
+                ['platform' => 'Discord', 'url' => 'https://discordapp.com/users/1218207427468726433', 'icon' => 'discord'],
             ],
             'contact' => [
                 'email' => 'your.email@example.com', // Replace with your actual email
