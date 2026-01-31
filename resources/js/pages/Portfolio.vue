@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation.vue';
 
 interface PersonalInfo {
     name: string
+    image: string
     title: string
     subtitle: string
     location: string
@@ -184,10 +185,17 @@ const getSkillColor = (level: number) => {
                         :key="project.id"
                         class="overflow-hidden rounded-lg border bg-card"
                     >
-                        <!-- Project Image Placeholder -->
-                        <div class="aspect-video bg-muted flex items-center justify-center">
+                    <div class="aspect-video bg-muted flex items-center justify-center overflow-hidden">
+                        <img 
+                            v-if="project.image" 
+                            :src="project.image" 
+                            :alt="project.name"
+                            class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                        <div v-else class="flex flex-col items-center gap-2">
                             <p class="text-sm text-muted-foreground">Screenshot coming soon</p>
                         </div>
+                    </div>
 
                         <div class="p-6">
                             <div class="mb-4 flex items-start justify-between">
@@ -233,7 +241,7 @@ const getSkillColor = (level: number) => {
                                     rel="noopener noreferrer"
                                     class="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
                                 >
-                                    <Github class="h-4 w-4" />
+                                    <Icon :icon="getSocialIcon('github')" class="h-4 w-4" />
                                     View Code
                                 </a>
                                 <a 
@@ -347,8 +355,14 @@ const getSkillColor = (level: number) => {
 
                 <div class="grid gap-8 md:grid-cols-[auto_1fr]">
                     <!-- Photo Placeholder -->
-                    <div class="mx-auto flex h-48 w-48 items-center justify-center rounded-full bg-muted">
-                        <p class="text-sm text-muted-foreground">Your Photo</p>
+                    <div class="mx-auto flex h-48 w-48 items-center justify-center overflow-hidden rounded-full bg-muted border-2 border-dashed border-muted-foreground/20">
+                        <img 
+                            v-if="personalInfo.image" 
+                            :src="personalInfo.image" 
+                            :alt="personalInfo.name"
+                            class="h-full w-full object-cover"
+                        />
+                        <p v-else class="text-sm text-muted-foreground">Your Photo</p>
                     </div>
 
                     <div class="space-y-6">
@@ -363,7 +377,7 @@ const getSkillColor = (level: number) => {
                         <div>
                             <h4 class="mb-2 font-semibold">Education</h4>
                             <p class="text-muted-foreground">
-                                Bachelor of Science in Information Technology<br>
+                                Bachelor of Science in Information Technology at the University of the Cordilleras<br>
                                 Expected Graduation: {{ personalInfo.graduation }}
                             </p>
                         </div>
